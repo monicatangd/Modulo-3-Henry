@@ -16,7 +16,7 @@ function $Promise(executor){
     );
 }
 $Promise.prototype._internalResolve=function(value){
-    if(this._state === "pending"){
+    if(this._state === "pendin"){
         this._state="fulfilled";
         this._value=value;
         this._callHandlers();
